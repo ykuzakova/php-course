@@ -2,21 +2,21 @@
 /*Испытание 5: Реализуйте функцию isBalanced(), которая принимает на вход строку, состоящую только из открывающих и закрывающих круглых скобок,
 и проверяет, является ли эта строка корректной. Пустая строка (отсутствие скобок) считается корректной.
 */
-    function isBalanced($str): bool
-    {
-        $count = 0;
-        for ($i = 0; $i < strlen($str); $i += 1) {
-            if ($str[$i] == '(') {
-                $count += 1;
-            }
-            if ($str[$i] == ')') {
-                $count -= 1;
-            }
-            if ($count < 0){
-                return false;
-            }
+function isBalanced(string $str): bool
+{
+    $count = 0;
+    $len = strlen($str);
+    for ($i = 0; $i < $len; $i++) {
+        if ($str[$i] === '(') {
+            $count++;
         }
-        return $count === 0;
-
+        if ($str[$i] === ')') {
+            $count--;
+        }
+        if ($count < 0) {
+            return false;
+        }
     }
+    return $count === 0;
+}
 
