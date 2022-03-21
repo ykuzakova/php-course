@@ -9,9 +9,8 @@ function isPerfect(int $num): bool
             $sum += $i;
         }
     }
-    if ($num === $sum) {
-        return true;
-    }
-    return false;
+    return $num === $sum && $sum !== 0;
+
 }
+
 var_dump(isPerfect(28));
