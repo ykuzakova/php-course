@@ -5,8 +5,11 @@
 
 function isHappy(string $str): bool
 {
-    $sum1 = 0;
     $len = strlen($str);
+    if ($len % 2 !== 0) {
+        return false;
+    }
+    $sum1 = 0;
     $middle = $len / 2;
     for ($i = 0; $i < $middle; $i++) {
         $sum1 += (int)$str[$i];
@@ -21,6 +24,7 @@ function isHappy(string $str): bool
     return false;
 }
 
+var_dump(isHappy('11211'));
 var_dump(isHappy('385916'));
 var_dump(isHappy('231002'));
 var_dump(isHappy('1222'));
