@@ -1,0 +1,21 @@
+{
+    "name": "yborzykina/phpcourse",
+    "autoload": {
+        "psr-4": {
+            "Yborzykina\\Phpcourse\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "yborzykina",
+            "email": "yborzykina@plesk.com"
+        }
+    ],
+    "require": {
+        "squizlabs/php_codesniffer": "*"
+    },
+	
+    "scripts": {
+        "lint": "phpcs --standard=PSR12 ./src"
+     }
+}

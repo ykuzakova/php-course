@@ -13,7 +13,7 @@ namespace MyApp\Tasks;
 
 class Ex8
 {
-    function fizzBuzz(int $begin, int $end)
+    function fizzBuzz(int $begin, int $end): void
     {
         for ($i = $begin; $i <= $end; $i++) {
             if (($i % 3 === 0) && ($i % 5 === 0)) {
@@ -28,4 +28,3 @@ class Ex8
         }
     }
 }
-

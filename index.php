@@ -10,13 +10,13 @@ require_once 'src/Tasks/Ex6.php';
 require_once 'src/Tasks/Ex7.php';
 require_once 'src/Tasks/Ex8.php';
 
-$ex1 = new \MyApp\Tasks\Ex1();
-
-try {
-    echo $ex1->binarySum('0', '111');
-} catch (\InvalidArgumentException $e) {
-    echo $e->getMessage();
-}
+//$ex1 = new \MyApp\Tasks\Ex1();
+//
+//try {
+//    echo $ex1->binarySum('0', '111');
+//} catch (\InvalidArgumentException $e) {
+//    echo $e->getMessage();
+//}
 
 //$ex3 = new \MyApp\Tasks\Ex3();
 //echo $ex3->fib(-1);
@@ -47,7 +47,7 @@ try {
 //$ex7 = new \MyApp\Tasks\Ex7();
 //echo $ex7->isHappy('11211');
 //
-//$ex8 = new \MyApp\Tasks\Ex8();
-//echo $ex8->fizzBuzz(10, 15);
-//
+$ex8 = new \MyApp\Tasks\Ex8();
+echo $ex8->fizzBuzz(10, 15);
+
 //exit;
