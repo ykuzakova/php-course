@@ -1,6 +1,7 @@
 <?php
 
-namespace MyApp\Tasks;
+namespace MyApp;
+require __DIR__ . '/vendor/autoload.php';
 
 require_once 'src/Tasks/Ex1.php';
 require_once 'src/Tasks/Ex3.php';

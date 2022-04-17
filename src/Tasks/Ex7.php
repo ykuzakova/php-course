@@ -9,11 +9,14 @@ namespace MyApp\Tasks;
 
 class Ex7
 {
+    /**
+     * @throws \Exception
+     */
     public function isHappy(string $str): bool
     {
         $len = strlen($str);
-        if ($len % 2 !== 0) {
-            return false;
+        if ($len % 2 !== 0 || $len === 0) {
+            throw new \Exception('wrong value!!!');
         }
         $sum1 = 0;
         $middle = $len / 2;
