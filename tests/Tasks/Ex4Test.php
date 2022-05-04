@@ -8,6 +8,7 @@ class Ex4Test extends TestCase
 {
     /**
      * @dataProvider addDigitsProvider
+     * @throws \Exception
      */
     public function testAddDigits(int $num, int $expected): void
     {
@@ -22,8 +23,7 @@ class Ex4Test extends TestCase
             [0, 0],
             [1, 1],
             [9, 9],
-            [10, 1],
-            [test]
+            [10, 1]
         ];
     }
 }

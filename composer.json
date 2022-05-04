@@ -17,7 +17,7 @@
     },
 
     "scripts": {
-        "lint": "phpcs --standard=PSR12 ./tests",
+        "lint": "phpcs --standard=PSR12 index.php ./src ./tests",
         "test": "phpunit"
     },
     "require-dev": {

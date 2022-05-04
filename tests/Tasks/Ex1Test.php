@@ -1,5 +1,7 @@
 <?php
 
+namespace MyApp\Tests\Tasks;
+
 use PHPUnit\Framework\TestCase;
 
 class Ex1Test extends TestCase
@@ -18,7 +20,7 @@ class Ex1Test extends TestCase
      */
     public function testBinarySum(string $bin1, string $bin2, string $expected): void
     {
-        $ex1 = new MyApp\Tasks\Ex1();
+        $ex1 = new \MyApp\Tasks\Ex1();
 
         self::assertEquals(
             $expected,

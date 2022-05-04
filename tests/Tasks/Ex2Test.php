@@ -11,7 +11,7 @@ class Ex2Test extends TestCase
      */
     public function testIsPowerOfThree(int $num, int $expected): void
     {
-        $ex2 = new MyApp\Tasks\Ex2();
+        $ex2 = new \MyApp\Tasks\Ex2();
 
         self::assertEquals($expected, $ex2->isPowerOfThree($num));
     }

@@ -13,8 +13,6 @@ class Ex7Test extends TestCase
     public function testIsHappyException(string $str, string $exception): void
     {
         $ex7 = new \MyApp\Tasks\Ex7();
-
-        //$this->expectErrorMessage('wrong value!!!');
         $this->expectException($exception);
         $ex7->isHappy($str);
     }
@@ -22,7 +20,8 @@ class Ex7Test extends TestCase
     public function isHappyWrongProvider(): array
     {
         return [
-            ['', \Exception::class]
+            ['', \Exception::class],
+            ['111', \Exception::class]
         ];
     }
 
@@ -42,9 +41,8 @@ class Ex7Test extends TestCase
         return [
             [true, '101101'],
             [false, '000111'],
-            [false, '10'],
             [true, '00'],
-            [false, '0']
+            [false, '01'],
         ];
     }
 }
