@@ -9,7 +9,7 @@ class Ex2Test extends TestCase
     /**
      * @dataProvider isPowerOfThreeProvider
      */
-    public function testIsPowerOfThree(int $num, int $expected): void
+    public function testIsPowerOfThree(int $num, bool $expected): void
     {
         $ex2 = new \MyApp\Tasks\Ex2();
 
@@ -19,9 +19,9 @@ class Ex2Test extends TestCase
     public function isPowerOfThreeProvider(): array
     {
         return [
-            [3, 1],
-            [9, 1],
-            [10, 0],
+            [3, true],
+            [9, true],
+            [10, false],
         ];
     }
 }

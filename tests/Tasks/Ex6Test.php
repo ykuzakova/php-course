@@ -19,7 +19,7 @@ class Ex6Test extends TestCase
     public function isPerfectWrongProvider(): array
     {
         return [
-        [-1, \Exception::class],
+            [-1, \Exception::class],
         ];
     }
 
