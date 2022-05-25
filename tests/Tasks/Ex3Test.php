@@ -6,6 +6,14 @@ use PHPUnit\Framework\TestCase;
 
 class Ex3Test extends TestCase
 {
+    public function testBinarySumWrongInputDta(): void
+    {
+        $ex3 = new \MyApp\Tasks\Ex3();
+
+        $this->expectException(\UnexpectedValueException::class);
+        $this->expectErrorMessage('Wrong input');
+        $ex3->fib(-1);
+    }
     /**
      * @dataProvider fibProvider
      */

@@ -6,11 +6,11 @@ use PHPUnit\Framework\TestCase;
 
 class Ex1Test extends TestCase
 {
-    public function testBinarySumWrongInputDta(): void
+    public function testBinarySumWrongInputData(): void
     {
         $ex1 = new \MyApp\Tasks\Ex1();
 
-        $this->getExpectedException(\InvalidArgumentException::class);
+        $this->expectException(\InvalidArgumentException::class);
         $this->expectErrorMessage('wrong input data');
         $ex1->binarySum('1', '');
     }
